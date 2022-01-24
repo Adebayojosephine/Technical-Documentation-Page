@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Technical Documentation Page</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header> HTML Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction"> Introduction </a></li>
+      <li><a class="nav-link" href="#Anatomy_of_an_HTML_Element"> Anatomy of an HTML Element </a></li>
+      <li><a class="nav-link" href="#Nesting_Elements"> Nesting Elements </a></li>
+      <li><a class="nav-link" href="#Anatomy_of_an_HTML_Document"> Anatomy of an HTML Document </a></li>
+      <li><a class="nav-link" href="#Images"> Images </a></li>
+      <li><a class="nav-link" href="#Headings_and_Paragraphs"> Headings and Paragraphs</a></li>
+      <li><a class="nav-link" href="#Lists"> Lists</a></li>
+      <li><a class="nav-link" href="#Links"> Links</a></li>
+      <li><a class="nav-link" href="#Forms"> Forms </a></li>
+      <li><a class="nav-link" href="#Text_Field"> Text Field </a></li>
+      <li><a class="nav-link" href="#Reference"> Reference </a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header> Introduction </header>
+      <article>
+        <p>
+          HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. 
+        </p>
+        
+        <p>
+          HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.  For example, take the following line of content:<br>
+          <code> My name is Josephine </code>
+        </p>
+        <p>
+          That is, 
+        </p>
+        <ul>
+        <li>
+          HTML stands for Hyper Text Markup Language
+          </li>
+          <li>
+            HTML is the standard markup language for creating Web pages
+          </li>
+          <li>
+            HTML describes the structure of a Web page
+          </li>
+          <li>
+            HTML consists of a series of elements
+          </li>
+          <li>
+            HTML elements tell the browser how to display the content
+          </li>
+          <li>
+            HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+          </li>
+        </ul>
+      </article>
+     </section>
+      
+      <section class="main-section" id="Anatomy_of_an_HTML_Element">
+        <header> Anatomy of an HTML Element </header>
+        <article> 
+          <p>
+            Let's explore the paragraph element:<br>
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png">
+          </p>
+          <p> The main parts of our elements are as follows:<br>
+            <ol>
+              <li>The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.
+              </li>
+              <li>
+                The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.
+              </li>
+              <li>
+                The content: This is the content of the element, which in this case, is just text.
+               </li>
+               <li>
+                  The element: The opening tag, the closing tag, and the content together comprise the element.
+               </li>
+          </ol>
+         </article>
+     </section>
+     
+         <section class="main-section" id="Nesting_Elements">
+            <header> Nesting Elements </header>
+            <p>
+               You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">strong </a> element, which means that the word is to be strongly emphasized
+            </p>
+            </article>
+     </section>
+   
+   <section"main-section" id="Images">
+      <header> Images </header>
+         <article>
+            <p> You can add images to your website by using the'img'element, and point to a specific image's URL using the'src'attribute.
+            </p>
+      </article>
+   </section>
+   
+   <section class="main-section" id="Headings_and_Paragraphs">
+      <header> Headings and Paragraphs </header>
+      <p>Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"> h1</a>-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">h6</a>
+      </p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"> p </a> elements are for containing paragraphs of text; you'll use these frequently when marking up regular text content.
+   </section>
+   
+<section class="main-section" id="Lists">
+   <header> Lists </header>
+   <p>
+      A lot of the web's content is lists and HTML has special elements for these. Marking up lists always consists of at least 2 elements. The most common list types are ordered and unordered lists:
+      <ol>
+         <li>Unordered lists are for lists where the order of the items doesn't matter, such as a shopping list. These are wrapped in a 'ul' tag element. </li>
+         <li> Ordered lists are for lists where the order of the items does matter, such as a recipe. These are wrapped in an 'ol' tag element. </li>
+             
+   </ol>
+   Each item inside the lists is put inside an  'li' tag element (list item) element.
+   </p>
+   </section>
+
+<section class="main-section" id="Links">
+   <header> Links </header>
+   <p>
+      Links are very important — they are what makes the web a web! To add a link, we need to use a simple element - a wrapped in a tag - "a" being the short form for "anchor". To make text within your paragraph into a link, follow these steps:
+      <ol>
+         <li>
+            Choose some text.
+         </li>
+           <li>
+              Wrap the text in an a tag element.
+         </li>
+         <li>
+            Give the a tag element an 'href' attribute.
+         </li>
+         <li>
+            Fill in the value of this attribute with the web address that you want the link to link to.
+         </li>
+              
+   </ol>
+   NOTE:href might appear like a rather obscure choice for an attribute name at first. If you are having trouble remembering it, remember that it stands for hypertext reference.
+   </p> 
+</section>
+
+<section class="main-section" id="Forms">
+   <header> Forms </header>
+   <p>
+      You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action attribute on your form element.
+   </p>
+</section>
+
+<section clas="main-section" id="Text_Field">
+   <header> Text Field </header>
+   <p>
+      You can create a text input by input type="text" in a tag.
+   </p>
+   <p>
+      You can also create a placeholder by putting it in the same tag. Placeholder text is what is displayed in your input element before your user has inputted anything.
+   </p>
+</section>
+
+
+<section class="main-section" id="Reference">
+   <header> Reference </header>
+   <article>
+      <p> All the documentation in this page is taken from:
+      <ul>
+         <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"> MDN </a>
+         </li>
+         <li>
+            <a href="https://www.w3schools.com/html/default.asp"> W3SCHOOLS </a>
+         </li>
+         <li>
+            <a href="https://www.freecodecamp.org/learn"> FREECODECAMP </a>
+         </li>
+      </ul>
+   </article>
+</section>
+</main>
+</body>
+</html>
